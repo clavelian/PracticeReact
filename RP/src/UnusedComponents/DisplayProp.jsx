@@ -1,4 +1,4 @@
-import Student from './Student'
+import Student from '../Components/Student'
 
 const DisplayProp = () => {
     return (  
