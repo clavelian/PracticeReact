@@ -24,11 +24,9 @@ function MyComponent() {
 
   return (
     <div>
-      <input type="text" value={inputText} onChange={handleChange} />
-      {/* You can access the input value as a prop here */}
+      <input type="text" value={inputText} onChange={handleChange} />       {/* You can access the input value as a prop here */}
       <p>Entered Text: {inputText}</p>  {/* Displaying the input for reference */}
-      {/* You can pass the inputText as a prop to another component here */}
-      <OtherComponent inputText={inputText} />
+      <OtherComponent inputText={inputText} />       {/* You can pass the inputText as a prop to another component here */}
     </div>
   );
 }

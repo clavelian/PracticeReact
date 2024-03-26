@@ -5,10 +5,12 @@ import './App.css'
 // // import viteLogo from '/vite.svg'
 // import CounterCounter from './Components/CounterCounter.jsx'
 // import Counter from './Components/Counter.jsx'
-import Student from './Components/Student.jsx'
+// import Student from './UnusedComponents/Student.jsx'
 import Kumpanya from './Components/Kumpanya.jsx'
 import AddDataItem from './Components/addLocalStorage.jsx'
 import DisplayData from './Components/DisplayLocalStorage.jsx'
+import MyComponent from './Components/MyComponent.jsx'
+import OtherComponent from './Components/OtherComponent.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -34,18 +36,19 @@ function App() {
         <CounterCounter/>
         </div>
         <Counter/> */}
-        <br/>
-        <br/>
-        <Student name="Spongebob" age={30} isStudent={true}  />
-        <br/>
-        <br/>
+        {/* <br/>
+        <br/> */}
+        {/* <Student name="Spongebob" age={30} isStudent={true}  /> */}
+        {/* <br/>
+        <br/> */}
         {/* <MyComponent /> */}
         <h1>This text must be replaced after the Company Name has been changed</h1>
         <Kumpanya />
 
         <AddDataItem />
         <DisplayData />
-        
+        <MyComponent />
+        <OtherComponent  />
     </>
   )
 }

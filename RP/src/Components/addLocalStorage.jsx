@@ -1,15 +1,18 @@
 import { useState } from 'react';
+import MyComponent from './MyComponent'
 
-function AddDataItem() {
+  const AddDataItem = () => {
   const [data, setData] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
     localStorage.setItem('myData', data); // Store data in localStorage
     setData(''); // Clear the input field after submission
   };
+  
 
   return (
+    <>
+    <MyComponent />
     <form onSubmit={handleSubmit}>
       <input
         type="text"
@@ -19,7 +22,9 @@ function AddDataItem() {
       />
       <button type="submit">Add Data</button>
     </form>
+    </>
   );
 }
+
 
 export default AddDataItem;
