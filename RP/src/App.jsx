@@ -9,8 +9,8 @@ import './App.css'
 import Kumpanya from './Components/Kumpanya.jsx'
 import AddDataItem from './Components/addLocalStorage.jsx'
 import DisplayData from './Components/DisplayLocalStorage.jsx'
-import MyComponent from './Components/MyComponent.jsx'
-import OtherComponent from './Components/OtherComponent.jsx'
+// import MyComponent from './Components/MyComponent.jsx'
+// import OtherComponent from './Components/OtherComponent.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -47,8 +47,8 @@ function App() {
 
         <AddDataItem />
         <DisplayData />
-        <MyComponent />
-        <OtherComponent  />
+        {/* <MyComponent /> */}
+        {/* <OtherComponent  /> */}
     </>
   )
 }

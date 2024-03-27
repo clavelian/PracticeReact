@@ -4,7 +4,8 @@
 const Header = ({ companyName }) => {
   return (
     <header>
-      <h1>{companyName}</h1>
+      <p>HEADER</p>
+      <h1> {companyName}</h1>
       {/* Other header content */}
     </header>
   );

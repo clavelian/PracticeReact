@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import MyComponent from './MyComponent'
+import MyComponent from '../MyComponent'
 
   const AddDataItem = () => {
   const [data, setData] = useState('');
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    localStorage.setItem('myData', data); // Store data in localStorage
-    setData(''); // Clear the input field after submission
+    e.preventDefault();
+    localStorage.setItem('myData', data); 
+    setData('')
   };
   
 

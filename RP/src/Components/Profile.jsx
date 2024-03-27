@@ -6,7 +6,7 @@ const Profile = ({ companyName }) => {
   return (
     <div>
       {/* Profile content */}
-      <p>Welcome to {companyName} profile</p>
+      <p>Welcome to {companyName} PROFILE</p>
     </div>
   );
 };

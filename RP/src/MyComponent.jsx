@@ -1,12 +1,12 @@
 import { useState } from "react";
-import OtherComponent from "./OtherComponent";
+import OtherComponent from "./Components/OtherComponent";
 
 
 function MyComponent() {
     const [inputText, setInputText] = useState(''); // State to store input value
   
-    const handleChange = (event) => {
-      setInputText(event.target.value);
+    const handleChange = (e) => {
+      setInputText(e.target.value);
     };
   
     // ... rest of your component

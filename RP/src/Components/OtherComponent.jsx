@@ -6,7 +6,7 @@ function OtherComponent(props) {
     // You can use the received inputText prop here
     return (
       <div>
-        <p>Received Text: {inputText}</p>
+        <p> OtherComponent: {inputText}</p>
       </div>
     );
   }
