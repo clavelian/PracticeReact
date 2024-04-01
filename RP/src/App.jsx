@@ -11,6 +11,7 @@ import AddDataItem from './Components/addLocalStorage.jsx'
 import DisplayData from './Components/DisplayLocalStorage.jsx'
 // import MyComponent from './Components/MyComponent.jsx'
 // import OtherComponent from './Components/OtherComponent.jsx'
+import Demo from './Components/UseLocalStorage.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -49,6 +50,8 @@ function App() {
         <DisplayData />
         {/* <MyComponent /> */}
         {/* <OtherComponent  /> */}
+
+        <Demo/>
     </>
   )
 }
