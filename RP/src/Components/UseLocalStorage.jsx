@@ -4,7 +4,7 @@ import UUseLocalStorage from "./UUselocalStorage";
 
 const Demo = () => {
     const [value, setValue] = useState('')
-    const {setItem} = UUseLocalStorage('value')
+    const {setItem, getItem, removeItem} = UUseLocalStorage('value')
 
 return (  
     <>
@@ -15,8 +15,9 @@ return (
             onChange={(e) => setValue(e.target.value)}
         />
         <button onClick={() => setItem(value)}>Set</button>
-        <button>Get</button>
-        <button>Remove</button>
+        <button onClick={() => getItem}>Get</button>
+        {value && <p>{value}</p>}
+        <button onClick={removeItem}>Remove</button>
     </>
     );
 }

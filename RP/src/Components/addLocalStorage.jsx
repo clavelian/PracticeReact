@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MyComponent from '../MyComponent'
+// import MyComponent from '../MyComponent'
 
   const AddDataItem = () => {
   const [data, setData] = useState('');
@@ -12,7 +12,7 @@ import MyComponent from '../MyComponent'
 
   return (
     <>
-    <MyComponent />
+    {/* <MyComponent /> */}
     <form onSubmit={handleSubmit}>
       <input
         type="text"
