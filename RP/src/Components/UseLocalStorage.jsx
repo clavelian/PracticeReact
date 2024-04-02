@@ -14,7 +14,7 @@ return (
             value={value} 
             onChange={(e) => setValue(e.target.value)}
         />
-        <button onClick={() => setItem}>Set</button>
+        <button onClick={() => setItem(value)}>Set</button>
         <button>Get</button>
         <button>Remove</button>
     </>
