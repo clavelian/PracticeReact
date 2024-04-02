@@ -43,7 +43,9 @@ function App() {
         {/* <br/>
         <br/> */}
         {/* <MyComponent /> */}
-        <h1>This text must be replaced after the Company Name has been changed</h1>
+
+        {/* <h1>This text must be replaced after the Company Name has been changed</h1> */}
+        
         <Kumpanya />
 
         <AddDataItem />
