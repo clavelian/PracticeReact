@@ -12,6 +12,7 @@ import DisplayData from './Components/DisplayLocalStorage.jsx'
 // import MyComponent from './Components/MyComponent.jsx'
 // import OtherComponent from './Components/OtherComponent.jsx'
 import Demo from './Components/UseLocalStorage.jsx'
+import DigitalClock from './Components/DigitalClock.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -52,7 +53,7 @@ function App() {
         <DisplayData />
         {/* <MyComponent /> */}
         {/* <OtherComponent  /> */}
-
+        <DigitalClock/>
         <Demo/>
     </>
   )
