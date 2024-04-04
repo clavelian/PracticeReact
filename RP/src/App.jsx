@@ -53,8 +53,11 @@ function App() {
         <DisplayData />
         {/* <MyComponent /> */}
         {/* <OtherComponent  /> */}
-        <DigitalClock/>
         <Demo/>
+        <br />
+        <br />
+        <br />
+        <DigitalClock/>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React, {useState,useEffect, useCallback} from "react";
+import React, {useState,useEffect} from "react";
 
 const DigitalClock = () => {
 
@@ -14,17 +14,23 @@ const DigitalClock = () => {
         }
     },[])
 
-    const formatTime = () =>{
+    function formatTime(){
         let hours = time.getHours()
         const minutes = time.getMinutes()
         const seconds = time.getSeconds()
         const meridiem = hours >= 12 ? "PM" : "AM"
+
+        hours = hours % 12 || 12 //convert to military time
+        return `${padZero(hours)}${padZero(minutes)}:${padZero(seconds)} ${meridiem}`
     }
+        function padZero(number){
+            return (number < 10 > "0" : "") + number
+        }
 
     return (  
         <>
             <div className="clock-container">
-                <span>00:00:00</span>
+                <span>{formatTime()}</span>
             </div>    
         </>
     );
