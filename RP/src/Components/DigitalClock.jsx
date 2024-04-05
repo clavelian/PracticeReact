@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import react, {useState,useEffect} from "react";
 
 const DigitalClock = () => {
 
@@ -21,10 +21,10 @@ const DigitalClock = () => {
         const meridiem = hours >= 12 ? "PM" : "AM"
 
         hours = hours % 12 || 12 //convert to military time
-        return `${padZero(hours)}${padZero(minutes)}:${padZero(seconds)} ${meridiem}`
+        return `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)} ${meridiem}`
     }
         function padZero(number){
-            return (number < 10 > "0" : "") + number
+            return(number < 10 ? "0" : "") + number
         }
 
     return (  
