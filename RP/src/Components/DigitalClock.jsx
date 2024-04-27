@@ -30,7 +30,7 @@ const DigitalClock = () => {
     return (  
         <>
             <div className="clock-container">
-                <span>{formatTime()}</span>
+                <span className="m-9">{formatTime()}</span>
             </div>    
         </>
     );

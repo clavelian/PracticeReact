@@ -20,7 +20,7 @@ import { useState } from 'react';
         onChange={(e) => setData(e.target.value)}
         placeholder="Enter data to add..."
       />
-      <button type="submit">Add Data</button>
+      <button type="submit" className="">Add Data</button>
     </form>
     </>
   );

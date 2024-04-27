@@ -2,7 +2,7 @@
 export default {
   content: [],
   theme: {
-    extend: ["./src/**/*.{html,js.ts.jsx.tsx}"],
+    extend: ["./src/*.{html,js.ts.jsx.tsx}"],
   },
   plugins: [],
 }
