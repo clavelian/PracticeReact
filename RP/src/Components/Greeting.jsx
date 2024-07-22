@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Greeting() {
   const [greeting, setGreeting] = useState('');
@@ -31,5 +31,5 @@ function Greeting() {
     </div>
   );
 }
-
+ 
 export default Greeting;
